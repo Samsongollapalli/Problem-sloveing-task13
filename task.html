@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <script>
+
+// 1) Enter no of rows: 4
+// output:
+// 1
+// 2 3
+// 4 5 6
+// 7 8 9 10
+// code:-
+row = 4
+count = 1
+for( i = 1 ; i <= 4 ;i++ )
+{
+ s = ""
+ for( j = 1; j <= i ; j++ )
+ {
+ s = s + count+" "
+ count++;
+ }
+ console.log(s)
+}
+
+// 2) Enter no of rows: 4
+// output:
+// a
+// a b
+// a b c
+// a b c d
+
+// row = 4
+for( i = 1 ; i <= 4 ;i++ )
+{
+ s = "",value = 97
+ for( j = 1; j <= i ; j++ )
+ {
+ s = s + String.fromCharCode(value)+" "
+ value++
+ }
+ console.log(s)
+}
+
+// 3) Enter no of rows:4
+// output:
+// a
+// b b
+// c c c
+// d d d d
+// code:-
+row = 4
+value = 97
+for( i = 1 ; i <= 4 ;i++ )
+{
+ s = ""
+ for( j = 1; j <= i ; j++ )
+ {
+ s = s + String.fromCharCode(value)+" "
+ 
+ }
+ value++
+ console.log(s)
+}
+
+    </script>
+</body>
+</html>
